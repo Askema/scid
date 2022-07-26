@@ -1455,6 +1455,109 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.header {
+  background: #ffffff;
+  -webkit-box-shadow: 0 4px 21px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 21px rgba(0, 0, 0, 0.07);
+  padding: 24px 0;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 22px;
+  color: #0E0E0F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: right;
+}
+
+.nav__item:not(:first-of-type) {
+  margin-left: 48px;
+}
+
+.nav__item:last-of-type {
+  margin-left: 40px;
+}
+
+.nav__item--logo {
+  margin-right: auto;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #00A76B;
+}
+
+.nav__link.btn:hover,
+.nav__link.btn:focus {
+  border-color: #00A76B;
+}
+
+.nav svg {
+  fill: none;
+}
+
+.nav__star {
+  color: #00A76B;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+.nav__toggle svg {
+  position: absolute;
+  fill: #0E0E0F;
+  top: 0;
+  right: 0;
+}
+
+.nav__toggle:hover .nav__burger,
+.nav__toggle:focus .nav__burger {
+  stroke: #00A76B;
+}
+
+.nav__toggle:hover .nav__close,
+.nav__toggle:focus .nav__close {
+  fill: #00A76B;
+}
+
+.nav__toggle--opened .nav__burger {
+  display: none;
+}
+
+.nav__toggle--closed .nav__close {
+  display: none;
+}
+
+.nav__burger {
+  stroke: #0E0E0F;
+}
+
+.btn {
+  border: 1.5px solid #0E0E0F;
+  border-radius: 30px;
+  padding: 12px 28px;
+  display: block;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1466,10 +1569,53 @@ button.swiper-pagination-bullet {
   .container {
     padding: 0 30px;
   }
+
+  .nav__list {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .btn {
+    padding: 10px 14px;
+  }
 }
 
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .header {
+    padding: 15px 0;
+  }
+
+  .nav__list {
+    font-size: 12px;
+    line-height: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .nav__item:not(:first-of-type) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .nav__list--closed .nav__item:not(:first-of-type) {
+    display: none;
+  }
+
+  .nav__toggle--js {
+    display: block;
+    border: 0;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
