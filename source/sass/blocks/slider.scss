@@ -1,8 +1,10 @@
 .slider {
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 
   &__container {
-    padding: 0 72px;
+    padding: 0 40px;
     margin: 0 auto;
     max-width: 1296px;
 
