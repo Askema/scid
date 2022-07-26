@@ -1,0 +1,10 @@
+.btn {
+  border: 1.5px solid $color-black-russian;
+  border-radius: 30px;
+  padding: 12px 28px;
+  display: block;
+
+  @include vp-1023 {
+    padding: 10px 14px;
+  }
+}
