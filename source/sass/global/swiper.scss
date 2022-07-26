@@ -28,7 +28,7 @@
   position: relative;
   overflow: hidden;
   list-style: none;
-  padding: 0;
+  padding: 24px 0 48px;
   z-index: 1
 }
 
@@ -203,8 +203,16 @@
 }
 
 .swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  bottom: 8px;
   z-index: 10;
   cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+
+.swiper-button-next {
+  transform: rotate(180deg);
 }
 
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
@@ -218,17 +226,9 @@
   right: auto
 }
 
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-  content: 'prev'
-}
-
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
   right: 10px;
   left: auto
-}
-
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-  content: 'next'
 }
 
 .swiper-button-lock {
@@ -292,8 +292,7 @@
   height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
   display: inline-block;
   border-radius: 50%;
-  background: var(--swiper-pagination-bullet-inactive-color, #000);
-  color: $color-jade;
+  background: $color-solitude;
 }
 
 button.swiper-pagination-bullet {
@@ -315,7 +314,18 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
   color: $color-jade;
-  background: var(--swiper-pagination-color, var(--swiper-theme-color))
+  background: $color-jade;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 6px;
+    border: 1px solid $color-jade;
+    border-radius: 50%;
+    transform: translate(-9px, -1px);
+  }
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical > .swiper-pagination-bullets {
