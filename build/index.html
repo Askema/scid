@@ -15,10 +15,10 @@
     <div class="container">
         <nav class="nav">
             <button type="button" class="nav__toggle">
-                <svg class="nav__burger" width="40" height="40" viewBox="0 0 40 40">
+                <svg class="nav__burger" width="30" height="30" viewBox="0 0 30 30">
                     <use xlink:href="img/sprite_auto.svg#burger"></use>
                 </svg>
-                <svg class="nav__close" width="40" height="40" viewBox="0 0 40 40">
+                <svg class="nav__close" width="30" height="30" viewBox="0 0 30 30">
                     <use xlink:href="img/sprite_auto.svg#close"></use>
                 </svg>
             </button>
@@ -53,6 +53,75 @@
     </div>
 </header>
 <main class="main">
+    <section class="slider">
+        <h1 class="visually-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+        <button class="swiper-button-prev" type="button">
+            <svg width="30" height="11" viewBox="0 0 30 11" fill="none">
+                <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="#000"/>
+            </svg>
+        </button>
+        <button class="swiper-button-next" type="button">
+            <svg width="30" height="11" viewBox="0 0 30 11" fill="none">
+                <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="#000"/>
+            </svg>
+        </button>
+        <div class="image-slider swiper">
+            <div class="image-slider__wrapper swiper-wrapper">
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="img/slider-bg.webp 1x, img/slider-bg@2x.jpg 2x">
+                            <img src="img/slider-bg.jpg" width="1440" height="672" alt="Парк">
+                        </picture>
+                        <div class="slider__container">
+                            <h2 class="slider__title">Lorem ipsum dolor sit amet,
+                                <span>consectetur adipiscing elit</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="img/slider-bg.webp 1x, img/slider-bg@2x.jpg 2x">
+                            <img src="img/slider-bg.jpg" width="1440" height="672" alt="Парк">
+                        </picture>
+                        <div class="slider__container">
+                            <h2 class="slider__title">Lorem ipsum dolor sit amet,
+                                <span>consectetur adipiscing elit</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="img/slider-bg.webp 1x, img/slider-bg@2x.jpg 2x">
+                            <img src="img/slider-bg.jpg" width="1440" height="672" alt="Парк">
+                        </picture>
+                        <div class="slider__container">
+                            <h2 class="slider__title">Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="img/slider-bg.webp 1x, img/slider-bg@2x.jpg 2x">
+                            <img src="img/slider-bg.jpg" width="1440" height="672" alt="Парк">
+                        </picture>
+                        <div class="slider__container">
+                            <h2 class="slider__title">Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-pagination swiper-pagination">
+            </div>
+        </div>
+    </section>
 </main>
 <footer class="footer">
 </footer>
