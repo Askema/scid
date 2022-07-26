@@ -293,7 +293,7 @@
   display: inline-block;
   border-radius: 50%;
   background: var(--swiper-pagination-bullet-inactive-color, #000);
-  color: $color-zorba;
+  color: $color-jade;
 }
 
 button.swiper-pagination-bullet {
@@ -314,7 +314,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-bullet-active {
-  color: $color-wood-bark;
+  color: $color-jade;
   background: var(--swiper-pagination-color, var(--swiper-theme-color))
 }
 
