@@ -1,0 +1,37 @@
+.social {
+
+  & form {
+    position: relative;
+    margin-bottom: 50px
+  }
+
+  &__input {
+    background: $color-default-white;
+    opacity: 0.2;
+    border-radius: 8px;
+    border: 0;
+    color: $color-default-white;
+    padding: 9px 0 7px 12px;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    border: 0;
+    background: transparent;
+
+    @include vp-767 {
+      right: auto;
+      left: 155px;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-of-type) {
+    margin-right: 16px
+  }
+}

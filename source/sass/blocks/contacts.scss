@@ -1,0 +1,16 @@
+.contacts {
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-of-type) {
+      margin-bottom: 18px;
+    }
+  }
+
+  & a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
