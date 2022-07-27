@@ -1780,12 +1780,32 @@ button.swiper-pagination-bullet {
 }
 
 .social__input {
-  background: #ffffff;
-  opacity: 0.2;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   border: 0;
   color: #ffffff;
-  padding: 9px 0 7px 12px;
+  padding: 9px 30px 7px 12px;
+  min-width: 255px;
+}
+
+.social__input::-webkit-input-placeholder {
+  color: white;
+}
+
+.social__input::-moz-placeholder {
+  color: white;
+}
+
+.social__input:-ms-input-placeholder {
+  color: white;
+}
+
+.social__input::-ms-input-placeholder {
+  color: white;
+}
+
+.social__input::placeholder {
+  color: white;
 }
 
 .social__button {
@@ -1967,6 +1987,6 @@ button.swiper-pagination-bullet {
 
   .social__button {
     right: auto;
-    left: 155px;
+    left: 220px;
   }
 }

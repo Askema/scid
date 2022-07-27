@@ -6,12 +6,16 @@
   }
 
   &__input {
-    background: $color-default-white;
-    opacity: 0.2;
+    background: rgba($color-default-white, 0.2);
     border-radius: 8px;
     border: 0;
     color: $color-default-white;
-    padding: 9px 0 7px 12px;
+    padding: 9px 30px 7px 12px;
+    min-width: 255px;
+
+    &::placeholder {
+      color: white;
+    }
   }
 
   &__button {
@@ -23,7 +27,7 @@
 
     @include vp-767 {
       right: auto;
-      left: 155px;
+      left: 220px;
     }
   }
 
